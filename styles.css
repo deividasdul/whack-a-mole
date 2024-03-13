@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  background-color: green;
+}
+
+#game-title {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  font-size: 44px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(3, 250px);
+  gap: 50px;
+
+  justify-content: center;
+}
+
+.hole {
+  background-image: url(./assets/images/icons8-hole-100.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-hole {
+  background-image: url(./assets/images/tomas.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
